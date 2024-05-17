@@ -1,0 +1,436 @@
+body{
+    background: radial-gradient(at top, #0059FF,#00102E);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.logo{ z-index: 0;}
+.navbar{ z-index: 1;    position: static; font-family: "FIFA Welcome"; font-size: 150px}
+.bg-light{
+    background: linear-gradient( #0059FF,#00102E);
+    border-radius: 25px;
+}
+.nav-item{    padding: 0px 10px;}
+.nav-item:first-child{
+    border-right:#00102E solid 1px;    
+}
+.zapatilla{
+    animation: zapatilla_animacion ease-in-out infinite 4s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+}
+@keyframes zapatilla_animacion{
+    0%{ transform: translateY(-10%)}
+    50%{ transform: translateY(0%)}
+    100%{ transform: translateY(-10%)}
+}
+.form-body {
+    width: 400px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: solid 1px #2980b9;
+    margin: 10px;
+}
+
+
+
+
+.text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.form-body input {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 75%;
+    padding-left: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-body input[type="password"] {
+    margin-top: 20px;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .596);
+}
+
+.form-body input:hover {
+    transition: .5s;
+    border: 1px solid #2980b9;
+    color: #fff;
+}
+
+.form-body #reg {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 78%;
+    background: transparent;
+    color: #b9c4c6;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #2980b9;
+    transition:  all .5s ease;
+    
+}
+.form-body #Is {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 78%;
+    background: transparent;
+    color: #b9c4c6;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #2980b9;
+    transition:  all .5s ease;
+    
+}
+
+
+.form-body button:hover {
+    color: #d5dbdd;
+    border: 2px solid #3498db;
+    background:linear-gradient(#34495e,#2c3e50);
+}
+.nav{
+    width: 300px;
+}
+
+.nav__link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #F6F8FA;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #fff;
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;	
+}
+
+	/*Estilos para el encabezado*/
+	.header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.6);
+        height: 100px;
+        width: 100%;
+      }
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: fixed;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 500px;
+        background: radial-gradient(at top, #0059FF,#00102E);
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(218%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+        transform: translateX(218%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #c7c7c7;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+.logo{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #2D4263;
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: #11294d;
+}
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/*TENIS HOMBRE*/
+.contenido{
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+    
+}
+.mostrador .fila{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    /*border: 2px solid red;*/
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.mostrador .fila .item:hover{
+    background: rgba(0,0,0,0.5);
+}
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 10%;
+}
+
+.mostrador .fila .item .descripcion{
+    color: #fff;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.seleccion{
+    transition: .5s ease;
+    opacity: 0;
+    width: 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.cerrar{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.info{
+    padding: 20px;
+}
+.info img{
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 10%;
+}
+H1{
+    color: #fff;
+}
+h2{
+    color: #fff;
+}
+.info p{
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.info .precio{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+.info .fila{
+    display: flex;
+    align-items: flex-end;
+}
+.info .fila label{
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}

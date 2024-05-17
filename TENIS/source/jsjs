@@ -1,0 +1,140 @@
+Array(
+
+    [id] => 98A16072GF321894L
+    [intent] => CAPTURE
+    [status] => COMPLETED
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [reference_id] => default
+                    [amount] => Array
+                        (
+                            [currency_code] => MXN
+                            [value] => 5391.00
+                        )
+
+                    [payee] => Array
+                        (
+                            [email_address] => sb-qxe43w26076408@business.example.com
+                            [merchant_id] => 7J5HV38ZKC8G4
+                        )
+
+                    [soft_descriptor] => PAYPAL *TEST STORE
+                    [shipping] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [full_name] => John Doe
+                                )
+
+                            [address] => Array
+                                (
+                                    [address_line_1] => Calle Juarez 1
+                                    [address_line_2] => Col. Cuauhtemoc
+                                    [admin_area_2] => Miguel Hidalgo
+                                    [admin_area_1] => Ciudad de Mexico
+                                    [postal_code] => 11580
+                                    [country_code] => MX
+                                )
+
+                        )
+
+                    [payments] => Array
+                        (
+                            [captures] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 7GB609032J168664D
+                                            [status] => COMPLETED
+                                            [amount] => Array
+                                                (
+                                                    [currency_code] => MXN
+                                                    [value] => 5391.00
+                                                )
+
+                                            [final_capture] => 1
+                                            [seller_protection] => Array
+                                                (
+                                                    [status] => ELIGIBLE
+                                                    [dispute_categories] => Array
+                                                        (
+                                                            [0] => ITEM_NOT_RECEIVED
+                                                            [1] => UNAUTHORIZED_TRANSACTION
+                                                        )
+
+                                                )
+
+                                            [create_time] => 2023-05-25T00:20:36Z
+                                            [update_time] => 2023-05-25T00:20:36Z
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => John
+                    [surname] => Doe
+                )
+
+            [email_address] => sb-qxsof26076427@personal.example.com
+            [payer_id] => KWJWPWCV8VVJE
+            [address] => Array
+                (
+                    [country_code] => MX
+                )
+
+        )
+
+    [create_time] => 2023-05-25T00:20:19Z
+    [update_time] => 2023-05-25T00:20:36Z
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/98A16072GF321894L
+                    [rel] => self
+                    [method] => GET
+                )
+
+        )
+
+)
+
+{id: '5K226794A8901791G', intent: 'CAPTURE', status: 'COMPLETED', purchase_units: Array(1), payer: {…}, …}
+create_time
+: 
+"2023-05-25T02:30:25Z"
+id
+: 
+"5K226794A8901791G"
+intent
+: 
+"CAPTURE"
+links
+: 
+[{…}]
+payer
+: 
+{name: {…}, email_address: 'sb-qxsof26076427@personal.example.com', payer_id: 'KWJWPWCV8VVJE', address: {…}}
+purchase_units
+: 
+[{…}]
+status
+: 
+"COMPLETED"
+update_time
+: 
+"2023-05-25T02:30:41Z"
+[[Prototype]]
+: 
+Object
